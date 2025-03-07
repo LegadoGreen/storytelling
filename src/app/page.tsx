@@ -370,7 +370,7 @@ export default function Home() {
       <div className="container">
         {/* Aquí podrías agregar controles de navegación si lo deseas */}
         <div className="timeline">
-          {chapters.map((chapter, index) => (
+          {chapters.map((chapter) => (
             <div key={chapter.id} className="event">
               {/* Puedes usar "Capítulo {id}" como fecha o agregar una propiedad extra */}
               <div className="event-date">Capítulo {chapter.id}</div>
