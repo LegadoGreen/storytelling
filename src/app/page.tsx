@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 const chapters = [
   {
@@ -375,7 +376,7 @@ export default function Home() {
               <div className="event-date">Capítulo {chapter.id}</div>
               <h3 className="event-title">{chapter.title}</h3>
               <p className="event-description">{chapter.summary}</p>
-              <img
+              <Image
                 className="event-image"
                 src={`${chapter.image}`}
                 alt={chapter.title}
