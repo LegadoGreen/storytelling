@@ -362,7 +362,7 @@ export default function Home() {
           <h1>El Viaje de Sofía: Una Odisea Global</h1>
           <p>
             Una línea de tiempo interactiva que narra el extraordinario viaje
-            de transformación de Sofía a través de las bioregiones del mundo.
+            de transformación de Sofía a través de 53 bioregiones del mundo, en 10 años.
           </p>
         </div>
       </header>
@@ -375,12 +375,15 @@ export default function Home() {
               {/* Puedes usar "Capítulo {id}" como fecha o agregar una propiedad extra */}
               <div className="event-date">Capítulo {chapter.id}</div>
               <h3 className="event-title">{chapter.title}</h3>
-              <p className="event-description">{chapter.summary}</p>
               <Image
                 className="event-image"
-                src={`${chapter.image}`}
+                src={`/${chapter.image}`}
                 alt={chapter.title}
+                width={800}
+                height={500}
               />
+              <br />
+              <p className="event-description">{chapter.summary}</p>
             </div>
           ))}
         </div>
