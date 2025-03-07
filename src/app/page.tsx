@@ -373,11 +373,11 @@ export default function Home() {
           {chapters.map((chapter) => (
             <div key={chapter.id} className="event">
               {/* Puedes usar "Capítulo {id}" como fecha o agregar una propiedad extra */}
-              <div className="event-date">Capítulo {chapter.id}</div>
+              {/* <div className="event-date">Capítulo {chapter.id}</div> */}
               <h3 className="event-title">{chapter.title}</h3>
               <Image
                 className="event-image"
-                src={`/${chapter.image}`}
+                src={`${chapter.image}`}
                 alt={chapter.title}
                 width={800}
                 height={500}
